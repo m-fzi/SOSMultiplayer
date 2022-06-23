@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05CFA991285D79BF00256BAC /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA990285D79BF00256BAC /* Players.swift */; };
-		05CFA993285D79CC00256BAC /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA992285D79CC00256BAC /* GameState.swift */; };
+		0513ADC12864688000C56C6B /* MatchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513ADC02864688000C56C6B /* MatchingView.swift */; };
+		0513ADC528646DCD00C56C6B /* SOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513ADC428646DCD00C56C6B /* SOS.swift */; };
+		05CFA991285D79BF00256BAC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA990285D79BF00256BAC /* Player.swift */; };
 		05CFA995285D7A1800256BAC /* SOSGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA994285D7A1800256BAC /* SOSGame.swift */; };
 		05CFA997285D7A5D00256BAC /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA996285D7A5D00256BAC /* GameView.swift */; };
-		05CFA999285DD0F100256BAC /* GameField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA998285DD0F100256BAC /* GameField.swift */; };
 		05CFA99B285DD5DE00256BAC /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA99A285DD5DE00256BAC /* Globals.swift */; };
 		05CFA99D285DD73800256BAC /* BonjourBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA99C285DD73800256BAC /* BonjourBrowser.swift */; };
 		05CFA99F285DD74500256BAC /* BonjourConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA99E285DD74500256BAC /* BonjourConnection.swift */; };
@@ -23,9 +23,6 @@
 		05CFA9AB285DD7D400256BAC /* ActorIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA9AA285DD7D400256BAC /* ActorIdentity.swift */; };
 		05CFA9AD285DD7E600256BAC /* ReceptionistPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA9AC285DD7E600256BAC /* ReceptionistPattern.swift */; };
 		05CFA9AF285DD8FB00256BAC /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA9AE285DD8FB00256BAC /* Logging.swift */; };
-		05CFA9B1285DE00200256BAC /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA9B0285DE00200256BAC /* GameMode.swift */; };
-		05CFA9B3285DFF2200256BAC /* PlayerBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA9B2285DFF2200256BAC /* PlayerBot.swift */; };
-		05CFA9B5285DFF3A00256BAC /* CharacterTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFA9B4285DFF3A00256BAC /* CharacterTeam.swift */; };
 		05CFA9B9285E06C300256BAC /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = 05CFA9B8285E06C300256BAC /* NIOTransportServices */; };
 		05E5D989285CE6CC009C5137 /* SOSMultiplayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5D988285CE6CC009C5137 /* SOSMultiplayerApp.swift */; };
 		05E5D98B285CE6CC009C5137 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5D98A285CE6CC009C5137 /* MainView.swift */; };
@@ -34,11 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05CFA990285D79BF00256BAC /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
-		05CFA992285D79CC00256BAC /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		0513ADC02864688000C56C6B /* MatchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingView.swift; sourceTree = "<group>"; };
+		0513ADC428646DCD00C56C6B /* SOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOS.swift; sourceTree = "<group>"; };
+		05CFA990285D79BF00256BAC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		05CFA994285D7A1800256BAC /* SOSGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSGame.swift; sourceTree = "<group>"; };
 		05CFA996285D7A5D00256BAC /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		05CFA998285DD0F100256BAC /* GameField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameField.swift; sourceTree = "<group>"; };
 		05CFA99A285DD5DE00256BAC /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		05CFA99C285DD73800256BAC /* BonjourBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourBrowser.swift; sourceTree = "<group>"; };
 		05CFA99E285DD74500256BAC /* BonjourConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourConnection.swift; sourceTree = "<group>"; };
@@ -50,10 +47,7 @@
 		05CFA9AA285DD7D400256BAC /* ActorIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorIdentity.swift; sourceTree = "<group>"; };
 		05CFA9AC285DD7E600256BAC /* ReceptionistPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionistPattern.swift; sourceTree = "<group>"; };
 		05CFA9AE285DD8FB00256BAC /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
-		05CFA9B0285DE00200256BAC /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
-		05CFA9B2285DFF2200256BAC /* PlayerBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBot.swift; sourceTree = "<group>"; };
-		05CFA9B4285DFF3A00256BAC /* CharacterTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTeam.swift; sourceTree = "<group>"; };
-		05CFA9BA285E079100256BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		05CFA9BA285E079100256BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E5D985285CE6CC009C5137 /* SOSMultiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOSMultiplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E5D988285CE6CC009C5137 /* SOSMultiplayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSMultiplayerApp.swift; sourceTree = "<group>"; };
 		05E5D98A285CE6CC009C5137 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -77,8 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				05E5D98A285CE6CC009C5137 /* MainView.swift */,
+				0513ADC02864688000C56C6B /* MatchingView.swift */,
 				05CFA996285D7A5D00256BAC /* GameView.swift */,
-				05CFA998285DD0F100256BAC /* GameField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,11 +88,8 @@
 		05CFA98E285D792C00256BAC /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				05CFA9B4285DFF3A00256BAC /* CharacterTeam.swift */,
-				05CFA992285D79CC00256BAC /* GameState.swift */,
-				05CFA9B0285DE00200256BAC /* GameMode.swift */,
-				05CFA990285D79BF00256BAC /* Players.swift */,
-				05CFA9B2285DFF2200256BAC /* PlayerBot.swift */,
+				0513ADC428646DCD00C56C6B /* SOS.swift */,
+				05CFA990285D79BF00256BAC /* Player.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -139,7 +130,6 @@
 		05E5D987285CE6CC009C5137 /* SOSMultiplayer */ = {
 			isa = PBXGroup;
 			children = (
-				05CFA9BA285E079100256BAC /* Info.plist */,
 				05CFA99A285DD5DE00256BAC /* Globals.swift */,
 				05CFA9AE285DD8FB00256BAC /* Logging.swift */,
 				05CFA98C285D790B00256BAC /* Views */,
@@ -147,6 +137,7 @@
 				05CFA98E285D792C00256BAC /* Game */,
 				05CFA98F285D794500256BAC /* LocalNetwork */,
 				05E5D98C285CE6CD009C5137 /* Assets.xcassets */,
+				05CFA9BA285E079100256BAC /* Info.plist */,
 				05E5D98E285CE6CD009C5137 /* Preview Content */,
 			);
 			path = SOSMultiplayer;
@@ -237,26 +228,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05CFA991285D79BF00256BAC /* Players.swift in Sources */,
+				05CFA991285D79BF00256BAC /* Player.swift in Sources */,
+				0513ADC12864688000C56C6B /* MatchingView.swift in Sources */,
 				05CFA9AB285DD7D400256BAC /* ActorIdentity.swift in Sources */,
-				05CFA9B1285DE00200256BAC /* GameMode.swift in Sources */,
 				05CFA9A1285DD75A00256BAC /* LocalNetworkActorSystem.swift in Sources */,
 				05CFA99F285DD74500256BAC /* BonjourConnection.swift in Sources */,
 				05CFA9A7285DD7A000256BAC /* LocalNetworkCallEncoder.swift in Sources */,
 				05CFA9A3285DD76D00256BAC /* LocalNetworkReceptionist.swift in Sources */,
 				05CFA9AD285DD7E600256BAC /* ReceptionistPattern.swift in Sources */,
 				05CFA9AF285DD8FB00256BAC /* Logging.swift in Sources */,
+				0513ADC528646DCD00C56C6B /* SOS.swift in Sources */,
 				05CFA9A9285DD7B500256BAC /* WireProtocol.swift in Sources */,
-				05CFA993285D79CC00256BAC /* GameState.swift in Sources */,
 				05CFA995285D7A1800256BAC /* SOSGame.swift in Sources */,
-				05CFA9B5285DFF3A00256BAC /* CharacterTeam.swift in Sources */,
-				05CFA9B3285DFF2200256BAC /* PlayerBot.swift in Sources */,
 				05E5D98B285CE6CC009C5137 /* MainView.swift in Sources */,
 				05CFA9A5285DD78E00256BAC /* LocalNetworkCallDecoder.swift in Sources */,
 				05CFA99B285DD5DE00256BAC /* Globals.swift in Sources */,
 				05CFA997285D7A5D00256BAC /* GameView.swift in Sources */,
 				05CFA99D285DD73800256BAC /* BonjourBrowser.swift in Sources */,
-				05CFA999285DD0F100256BAC /* GameField.swift in Sources */,
 				05E5D989285CE6CC009C5137 /* SOSMultiplayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

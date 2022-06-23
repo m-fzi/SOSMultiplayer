@@ -23,7 +23,7 @@ public distributed actor LocalNetworkReceptionist: DistributedActorReceptionist 
     var knownActors: [CheckInID: any DistributedActor] = [:]
     
     // Mapping of subscriptions to streams
-    //
+    
     // Note that this implementation is pretty naive, a better implementation would keep specific
     // streams for specific actor types subscribed to, as well as keep de-duplication implemented as part of the receptionist wire protocol.
     private var streams: [AsyncStream<any DistributedActor>.Continuation] = []
@@ -50,7 +50,7 @@ public distributed actor LocalNetworkReceptionist: DistributedActorReceptionist 
         self.inform(about: actor, tag: tag)
         
         // Tell all other receptionists about it.
-        //
+       
         // Rather naive implementation that does not take feedback from recipients,
         // a better implementation would negotiate with recipients and see which actors they are not aware of yet.
         // Note that such tasks should also be cancelled when the system shuts down.

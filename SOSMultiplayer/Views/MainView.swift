@@ -10,74 +10,28 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var showMatchSheet = false
     
-    @State private var selectedGameMode: GameMode?
-    @State private var selectedTeam: CharacterTeam = .fish
-
     var body: some View {
-        NavigationView {
-            VStack {
-                TitleView(selectedTeam: selectedTeam, mode: nil)
-                Text("The distributed actor TicTacToe game!")
-                    .font(.title2)
-                
-                VStack {
-                    Text("Select Team:")
-                    Picker("Select Team:", selection: $selectedTeam) {
-                        Text("Fish (\(CharacterTeam.fish.emojiArray.joined(separator: "")))").tag(CharacterTeam.fish)
-                        Text("Rodents (\(CharacterTeam.rodents.emojiArray.joined(separator: "")))").tag(CharacterTeam.rodents)
-                    }.pickerStyle(.segmented)
-                }.padding(5)
-                
-                VStack {
-                    Button("Play with a Friend") { selectedGameMode = .localNetwork }.bold()
-                    Text("(Local Network)").fontWeight(.light)
-                }.padding(2)
-                
-                // Other play modes here in the future...
-                
-                Spacer()
-            }.navigate(using: $selectedGameMode, using: $selectedTeam, destination: makeGameView)
+        Button {
+            showMatchSheet = true
+        } label: {
+            Text("SOS Multiplayer")
+                .font(.largeTitle)
+                .bold()
+                .foregroundColor(.black)
+        }
+        .sheet(isPresented: $showMatchSheet) {
+            MatchingView()
         }
     }
-    
-    func makeGameView(mode: GameMode, team: CharacterTeam) -> some View {
-        GameView(mode: mode, team: team)
-    }
+        
 }
 
-// - MARK: Navigation helpers
 
-extension NavigationLink where Label == EmptyView {
-    
-    init?<Value1, Value2>(_ binding1: Binding<Value1?>, _ binding2: Binding<Value2>, @ViewBuilder destination: (Value1, Value2) -> Destination ) {
-        guard let value1 = binding1.wrappedValue else {
-            return nil
-        }
-        let value2 = binding2.wrappedValue
 
-        let isActive = Binding(
-            get: {
-                true
-            },
-            set: { newValue in
-                if !newValue {
-                    binding1.wrappedValue = nil
-                }
-            }
-        )
 
-        self.init(destination: destination(value1, value2), isActive: isActive, label: EmptyView.init)
-    }
-}
 
-extension View {
-    @ViewBuilder
-    func navigate<Value1, Value2, Destination: View>(using binding1: Binding<Value1?>, using binding2: Binding<Value2>,
-        @ViewBuilder destination: (Value1, Value2) -> Destination) -> some View {
-        background(NavigationLink(binding1, binding2, destination: destination))
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
